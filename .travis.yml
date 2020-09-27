@@ -3,3 +3,5 @@ language: generic
 
 git:
   depth: 1
+
+script: docker build .
