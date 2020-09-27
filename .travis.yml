@@ -4,5 +4,4 @@ language: generic
 git:
   depth: 1
 
-script: docker build --tag dtool .
-script: docker run dtool
+script: docker build --tag dtool . && docker run dtool
