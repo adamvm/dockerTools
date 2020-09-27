@@ -1,2 +1,5 @@
 dist: focal
 language: generic
+
+git:
+  depth: 1
