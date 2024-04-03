@@ -7,7 +7,10 @@ RUN apt-get update && apt-get install -y \
   clang-tidy \
   cmake \
   ninja-build \
-  valgrind
+  valgrind \
+  vim \
+  vim-airline \
+  silversearcher-ag
 RUN apt-get clean
 
 ENTRYPOINT ["date"]
