@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
   valgrind \
   vim \
   vim-airline \
-  silversearcher-ag
+  silversearcher-ag \
  && rm -rf /var/lib/apt/lists/* \
  && apt-get clean
 
