@@ -4,7 +4,7 @@ PASS_FILE="config/pass.file"
 
 # Sprawdź, czy plik z hasłem istnieje
 if [ ! -f "$PASS_FILE" ]; then
-   echo "Plik $PASS_FILE nie istnieje. Tworzę plik z domyślnym hasłem."
+   echo "File $PASS_FILE do not exist. Creating with default password."
    mkdir -p config
    echo "pass" > "$PASS_FILE"
 fi
