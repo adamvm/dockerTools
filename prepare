@@ -1,0 +1,12 @@
+#!/bin/bash
+
+PASS_FILE="config/pass.file"
+
+# Sprawdź, czy plik z hasłem istnieje
+if [ ! -f "$PASS_FILE" ]; then
+   echo "Plik $PASS_FILE nie istnieje. Tworzę plik z domyślnym hasłem."
+   mkdir -p config
+   echo "pass" > "$PASS_FILE"
+fi
+
+docker build --build-arg USERNAME=$(whoami) --build-arg PASSWORD=$(cat config/pass.file) -t my_dev_env .
